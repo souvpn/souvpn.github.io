@@ -1,4 +1,4 @@
-# 搜免费VPN | 5月2日20.5M/S|免费V2ray/Shadowrocket/Clash/SSR节点机场分享  更新时间 2025-05-02 22:11:25
+# 搜免费VPN | 5月2日22.9M/S|免费SSR/V2ray/Shadowrocket/Clash节点机场分享  更新时间 2025-05-02 22:19:05
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://souvpn.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
