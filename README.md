@@ -1,4 +1,4 @@
-# 搜免费VPN | 11月7日19.8M/S|免费V2ray节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点节点机场分享  更新时间 2025-11-07 07:36:41
+# 搜免费VPN | 11月13日21.4M/S|免费Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点节点机场分享  更新时间 2025-11-13 11:00:06
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://souvpn.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://souvpn.github.io/uploads/2025/11/0-20251107.yaml
-- https://souvpn.github.io/uploads/2025/11/1-20251107.yaml
-- https://souvpn.github.io/uploads/2025/11/2-20251107.yaml
-- https://souvpn.github.io/uploads/2025/11/3-20251107.yaml
-- https://souvpn.github.io/uploads/2025/11/4-20251107.yaml
+- https://souvpn.github.io/uploads/2025/11/0-20251113.yaml
+- https://souvpn.github.io/uploads/2025/11/1-20251113.yaml
+- https://souvpn.github.io/uploads/2025/11/2-20251113.yaml
+- https://souvpn.github.io/uploads/2025/11/3-20251113.yaml
+- https://souvpn.github.io/uploads/2025/11/4-20251113.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://souvpn.github.io/uploads/2025/11/0-20251107.txt
-- https://souvpn.github.io/uploads/2025/11/1-20251107.txt
-- https://souvpn.github.io/uploads/2025/11/2-20251107.txt
-- https://souvpn.github.io/uploads/2025/11/3-20251107.txt
-- https://souvpn.github.io/uploads/2025/11/4-20251107.txt
+- https://souvpn.github.io/uploads/2025/11/0-20251113.txt
+- https://souvpn.github.io/uploads/2025/11/1-20251113.txt
+- https://souvpn.github.io/uploads/2025/11/2-20251113.txt
+- https://souvpn.github.io/uploads/2025/11/3-20251113.txt
+- https://souvpn.github.io/uploads/2025/11/4-20251113.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://souvpn.github.io/uploads/2025/11/20251107.json
+- https://souvpn.github.io/uploads/2025/11/20251113.json
 
 ## 更多Clash节点订阅 ：
 
