@@ -293,12 +293,13 @@ A5：不必强制每日更换，但应在发现节点失效或网络不稳定时
 <div class="clearfix"></div>
 <div class="col-md-12 mt-5">
         <p>上一个：<a href="/free-nodes/2026-4-16-free-node-subscribe-links.htm">搜免费VPN | 4月16日22.3M/S|免费V2ray节点/Clash节点/Singbox节点/Shadowrocket节点/SSR节点/Trojan节点节点机场分享</a></p>
+        <p>下一个：<a href="/free-nodes/2026-4-18-vpn-github.htm">搜免费VPN | 4月18日21.4M/S|免费Clash节点/SSR节点/V2ray节点/Shadowrocket节点/Trojan节点/Singbox节点节点机场分享</a></p>
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>PassWall2 在路由器上使用 TUN 模式会有什么影响？</h5></div>
+    <div class="panel-heading"><h5>Clash 如何配置策略组优先节点？</h5></div>
     <div class="panel-body">
-        启用 TUN 模式会拦截并转发路由器上全部或选定流量，这会增加路由器 CPU 与内存负担，可能影响路由器其他服务表现。建议在性能足够的设备上启用，或仅对特定设备/端口进行分流。<hr />    </div>
+        在 Clash 中，用户可以通过策略组设置节点优先级，优先使用延迟低、稳定性高的节点。结合规则文件，可以根据域名或 IP 自动选择最优节点，实现更高效的网络访问体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Hysteria2 多路复用对短连接性能有何提升？</h5></div>
@@ -306,9 +307,29 @@ A5：不必强制每日更换，但应在发现节点失效或网络不稳定时
         多路复用允许多个短连接共享同一通道，减少握手延迟和资源消耗。适合高频短连接场景，如游戏和即时通讯，可提高吞吐量和连接稳定性，优化整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>QuantumultX 与 Shadowrocket 相比的最大区别是什么？</h5></div>
+    <div class="panel-heading"><h5>Sing-box 的域名规则如何实现分流？</h5></div>
     <div class="panel-body">
-        QuantumultX 在规则系统和自动化脚本上更灵活，支持丰富的 rewrite 与 filter 功能，而 Shadowrocket 则更轻便易用，适合普通用户快速切换节点。二者可根据使用习惯与功能需求选择。<hr />    </div>
+        Sing-box 支持按域名匹配流量，将不同网站或应用流量分配到指定节点。结合策略组自动切换低延迟节点，可优化访问速度，保证网络稳定性并提高整体体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>如何使用 Docker 部署 sing-box 或 v2ray？</h5></div>
+    <div class="panel-body">
+        选择官方或社区维护的 Docker 镜像，编写 docker-compose.yml 指定配置文件挂载、网络模式与端口映射。使用容器管理可以隔离运行环境、便于日志采集并与反向代理（如 Nginx）协同工作。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VMess AEAD 加密如何保证数据安全？</h5></div>
+    <div class="panel-body">
+        AEAD 加密防止数据篡改、重放攻击和流量特征泄露。在高封锁环境下使用，可保证节点长期可用，提升数据安全和连接稳定性，同时降低被检测风险。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>PassWall2 在路由器上使用 TUN 模式会有什么影响？</h5></div>
+    <div class="panel-body">
+        启用 TUN 模式会拦截并转发路由器上全部或选定流量，这会增加路由器 CPU 与内存负担，可能影响路由器其他服务表现。建议在性能足够的设备上启用，或仅对特定设备/端口进行分流。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>V2Ray 的 WebSocket + TLS 如何防止流量被检测？</h5></div>
+    <div class="panel-body">
+        WebSocket + TLS 可将 V2Ray 流量伪装成正常 HTTPS 请求，隐藏真实数据特征，配合域名伪装和策略组使用，可有效绕过封锁，提高节点安全性和连接稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>WinXray 可以自定义规则吗？</h5></div>
@@ -321,29 +342,9 @@ A5：不必强制每日更换，但应在发现节点失效或网络不稳定时
         Sing-box 在性能优化上比 Clash 更出色。它采用 Go 语言重构核心模块，并对并发模型进行了优化，内存占用更低，启动速度更快，适合低配置设备或嵌入式环境。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 的域名规则如何实现分流？</h5></div>
+    <div class="panel-heading"><h5>QuantumultX 与 Shadowrocket 相比的最大区别是什么？</h5></div>
     <div class="panel-body">
-        Sing-box 支持按域名匹配流量，将不同网站或应用流量分配到指定节点。结合策略组自动切换低延迟节点，可优化访问速度，保证网络稳定性并提高整体体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray 的 WebSocket + TLS 如何防止流量被检测？</h5></div>
-    <div class="panel-body">
-        WebSocket + TLS 可将 V2Ray 流量伪装成正常 HTTPS 请求，隐藏真实数据特征，配合域名伪装和策略组使用，可有效绕过封锁，提高节点安全性和连接稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess AEAD 加密如何保证数据安全？</h5></div>
-    <div class="panel-body">
-        AEAD 加密防止数据篡改、重放攻击和流量特征泄露。在高封锁环境下使用，可保证节点长期可用，提升数据安全和连接稳定性，同时降低被检测风险。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>如何使用 Docker 部署 sing-box 或 v2ray？</h5></div>
-    <div class="panel-body">
-        选择官方或社区维护的 Docker 镜像，编写 docker-compose.yml 指定配置文件挂载、网络模式与端口映射。使用容器管理可以隔离运行环境、便于日志采集并与反向代理（如 Nginx）协同工作。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 如何配置策略组优先节点？</h5></div>
-    <div class="panel-body">
-        在 Clash 中，用户可以通过策略组设置节点优先级，优先使用延迟低、稳定性高的节点。结合规则文件，可以根据域名或 IP 自动选择最优节点，实现更高效的网络访问体验。    </div>
+        QuantumultX 在规则系统和自动化脚本上更灵活，支持丰富的 rewrite 与 filter 功能，而 Shadowrocket 则更轻便易用，适合普通用户快速切换节点。二者可根据使用习惯与功能需求选择。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -372,16 +373,16 @@ A5：不必强制每日更换，但应在发现节点失效或网络不稳定时
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-3-4-top-vpn.htm" title="搜免费VPN | 3月4日20.9M/S|免费Trojan节点/Shadowrocket节点/SSR节点/Singbox节点/Clash节点/V2ray节点节点机场分享">搜免费VPN | 3月4日20.9M/S|免费Trojan节点/Shadowrocket节点/SSR节点/Singbox节点/Clash节点/V2ray节点节点机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-13-free-node-subscribe.htm" title="搜免费VPN | 3月13日19.3M/S|免费SSR节点/Clash节点/Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点节点机场分享">搜免费VPN | 3月13日19.3M/S|免费SSR节点/Clash节点/Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点节点机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-26-mianfei-vpn.htm" title="搜免费VPN | 3月26日20.8M/S|免费Singbox节点/V2ray节点/Clash节点/SSR节点/Trojan节点/Shadowrocket节点节点机场分享">搜免费VPN | 3月26日20.8M/S|免费Singbox节点/V2ray节点/Clash节点/SSR节点/Trojan节点/Shadowrocket节点节点机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-29-free-node-subscribe.htm" title="搜免费VPN | 3月29日20.3M/S|免费V2ray节点/SSR节点/Clash节点/Shadowrocket节点/Trojan节点/Singbox节点节点机场分享">搜免费VPN | 3月29日20.3M/S|免费V2ray节点/SSR节点/Clash节点/Shadowrocket节点/Trojan节点/Singbox节点节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-10-share-vpn.htm" title="搜免费VPN | 3月10日18.2M/S|免费Trojan节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Singbox节点节点机场分享">搜免费VPN | 3月10日18.2M/S|免费Trojan节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Singbox节点节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-15-free-vpn.htm" title="搜免费VPN | 3月15日19.6M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Trojan节点/Clash节点/Singbox节点节点机场分享">搜免费VPN | 3月15日19.6M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Trojan节点/Clash节点/Singbox节点节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-11-top-vpn-node.htm" title="搜免费VPN | 4月11日20.2M/S|免费V2ray节点/Clash节点/Singbox节点/Trojan节点/SSR节点/Shadowrocket节点节点机场分享">搜免费VPN | 4月11日20.2M/S|免费V2ray节点/Clash节点/Singbox节点/Trojan节点/SSR节点/Shadowrocket节点节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-6-vpn-node.htm" title="搜免费VPN | 3月6日18.1M/S|免费Singbox节点/V2ray节点/SSR节点/Clash节点/Trojan节点/Shadowrocket节点节点机场分享">搜免费VPN | 3月6日18.1M/S|免费Singbox节点/V2ray节点/SSR节点/Clash节点/Trojan节点/Shadowrocket节点节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-7-share-vpn.htm" title="搜免费VPN | 3月7日22.5M/S|免费V2ray节点/Clash节点/Singbox节点/Shadowrocket节点/Trojan节点/SSR节点节点机场分享">搜免费VPN | 3月7日22.5M/S|免费V2ray节点/Clash节点/Singbox节点/Shadowrocket节点/Trojan节点/SSR节点节点机场分享</a></li>
                         <li class="py-2"><a href="/free-nodes/2026-3-17-top-vpn.htm" title="搜免费VPN | 3月17日20.4M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Trojan节点/Singbox节点节点机场分享">搜免费VPN | 3月17日20.4M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Trojan节点/Singbox节点节点机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-8-top-vpn.htm" title="搜免费VPN | 3月8日18.7M/S|免费V2ray节点/Singbox节点/Clash节点/Trojan节点/Shadowrocket节点/SSR节点节点机场分享">搜免费VPN | 3月8日18.7M/S|免费V2ray节点/Singbox节点/Clash节点/Trojan节点/Shadowrocket节点/SSR节点节点机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-14-top-vpn-node.htm" title="搜免费VPN | 4月14日19.6M/S|免费Clash节点/V2ray节点/Trojan节点/SSR节点/Singbox节点/Shadowrocket节点节点机场分享">搜免费VPN | 4月14日19.6M/S|免费Clash节点/V2ray节点/Trojan节点/SSR节点/Singbox节点/Shadowrocket节点节点机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-25-node-share.htm" title="搜免费VPN | 3月25日19.7M/S|免费Trojan节点/Singbox节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点节点机场分享">搜免费VPN | 3月25日19.7M/S|免费Trojan节点/Singbox节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点节点机场分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-3-21-free-node-subscribe.htm" title="搜免费VPN | 3月21日19.9M/S|免费Trojan节点/Clash节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点节点机场分享">搜免费VPN | 3月21日19.9M/S|免费Trojan节点/Clash节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-18-vpn-github.htm" title="搜免费VPN | 4月18日21.4M/S|免费Clash节点/SSR节点/V2ray节点/Shadowrocket节点/Trojan节点/Singbox节点节点机场分享">搜免费VPN | 4月18日21.4M/S|免费Clash节点/SSR节点/V2ray节点/Shadowrocket节点/Trojan节点/Singbox节点节点机场分享</a></li>
                         <li class="py-2"><a href="/free-nodes/2026-3-20-node-share.htm" title="搜免费VPN | 3月20日21.1M/S|免费V2ray节点/Shadowrocket节点/Trojan节点/SSR节点/Singbox节点/Clash节点节点机场分享">搜免费VPN | 3月20日21.1M/S|免费V2ray节点/Shadowrocket节点/Trojan节点/SSR节点/Singbox节点/Clash节点节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-25-node-share.htm" title="搜免费VPN | 3月25日19.7M/S|免费Trojan节点/Singbox节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点节点机场分享">搜免费VPN | 3月25日19.7M/S|免费Trojan节点/Singbox节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点节点机场分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-3-8-top-vpn.htm" title="搜免费VPN | 3月8日18.7M/S|免费V2ray节点/Singbox节点/Clash节点/Trojan节点/Shadowrocket节点/SSR节点节点机场分享">搜免费VPN | 3月8日18.7M/S|免费V2ray节点/Singbox节点/Clash节点/Trojan节点/Shadowrocket节点/SSR节点节点机场分享</a></li>
                     </ul>
     </div>
 </div>
@@ -393,7 +394,7 @@ A5：不必强制每日更换，但应在发现节点失效或网络不稳定时
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">10</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
+                <h4><span class="badge" style="float: right;">17</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-03/" title="2026-03 归档">2026-03</a></h4>
