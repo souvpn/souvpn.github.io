@@ -367,14 +367,29 @@ A：可以。使用 Clash Meta、Clash Classic 等免费内核版本，不存在
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Surfboard 支持规则分流功能吗？</h5></div>
+    <div class="panel-body">
+        支持。Surfboard 可通过规则文件和策略组将不同类型流量分配到指定节点。保证网页浏览、视频和游戏走最优线路，提高访问速度和整体网络稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Shadowsocks 密码泄露后应如何应对？</h5></div>
     <div class="panel-body">
         立即更改服务端密码与相应的端口，检查服务器是否存在异常连接或 root 活动，查看日志并封禁可疑 IP。若使用多人共享节点，建议为每个用户单独分配独立端口与密码以降低风险传播。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 节点测速功能如何优化连接？</h5></div>
+    <div class="panel-heading"><h5>Surfboard 的规则文件如何支持广告屏蔽？</h5></div>
     <div class="panel-body">
-        Shadowrocket 定期测速节点延迟和丢包率，并结合策略组自动切换到最佳节点。保证网页、视频和游戏流量通过最优路径，提高访问速度和连接稳定性。<hr />    </div>
+        规则文件可添加广告域名或 URL 列表，将请求重定向或阻断。结合策略组和自动更新，Surfboard 可实现全局广告屏蔽，提高浏览体验并节省带宽。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Nekoray 的节点排序依据是什么？</h5></div>
+    <div class="panel-body">
+        Nekoray 默认按节点延迟排序。用户可以自定义排序规则，如按订阅来源、名称或连接成功率排列，从而快速找到性能最佳或最常用的节点。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Netch 是否支持系统代理？</h5></div>
+    <div class="panel-body">
+        Netch 不直接修改系统代理，而是通过虚拟网卡（TAP 驱动）实现透明代理。这种方式不会影响浏览器设置，适合游戏和应用程序需要 UDP 支持的场景。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>V2Ray 的策略组如何根据延迟自动选择节点？</h5></div>
@@ -387,29 +402,14 @@ A：可以。使用 Clash Meta、Clash Classic 等免费内核版本，不存在
         AEAD 加密可防止数据篡改、重放攻击和流量特征泄露。在高封锁环境下保证节点可用，提升数据安全和连接稳定性，同时降低被检测风险，确保长期安全访问。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Surfboard 的规则文件如何支持广告屏蔽？</h5></div>
-    <div class="panel-body">
-        规则文件可添加广告域名或 URL 列表，将请求重定向或阻断。结合策略组和自动更新，Surfboard 可实现全局广告屏蔽，提高浏览体验并节省带宽。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>V2Ray 配置文件中 inbound 和 outbound 有什么区别？</h5></div>
     <div class="panel-body">
         在 V2Ray 中，inbound 表示流量进入方式（如本地代理端口），outbound 表示流量出口方式（如 VMess、Trojan 等协议）。通过灵活组合两者，可以实现局域网共享、分流及中继等功能。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Netch 是否支持系统代理？</h5></div>
+    <div class="panel-heading"><h5>Shadowrocket 节点测速功能如何优化连接？</h5></div>
     <div class="panel-body">
-        Netch 不直接修改系统代理，而是通过虚拟网卡（TAP 驱动）实现透明代理。这种方式不会影响浏览器设置，适合游戏和应用程序需要 UDP 支持的场景。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekoray 的节点排序依据是什么？</h5></div>
-    <div class="panel-body">
-        Nekoray 默认按节点延迟排序。用户可以自定义排序规则，如按订阅来源、名称或连接成功率排列，从而快速找到性能最佳或最常用的节点。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Surfboard 支持规则分流功能吗？</h5></div>
-    <div class="panel-body">
-        支持。Surfboard 可通过规则文件和策略组将不同类型流量分配到指定节点。保证网页浏览、视频和游戏走最优线路，提高访问速度和整体网络稳定性。<hr />    </div>
+        Shadowrocket 定期测速节点延迟和丢包率，并结合策略组自动切换到最佳节点。保证网页、视频和游戏流量通过最优路径，提高访问速度和连接稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Nekobox 是否支持多客户端节点管理？</h5></div>
@@ -462,16 +462,16 @@ A：可以。使用 Clash Meta、Clash Classic 等免费内核版本，不存在
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/share-vpn-2026-8-23.htm" title="搜免费VPN | 8月23日21.3M/S|免费Shadowrocket节点/SSR节点/Clash节点/Singbox节点/Trojan节点/V2ray节点节点机场分享">搜免费VPN | 8月23日21.3M/S|免费Shadowrocket节点/SSR节点/Clash节点/Singbox节点/Trojan节点/V2ray节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-24-free-vpn-node.htm" title="搜免费VPN | 7月24日19M/S|免费Trojan节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点/Clash节点节点机场分享">搜免费VPN | 7月24日19M/S|免费Trojan节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点/Clash节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-18-free-vpn-node.htm" title="搜免费VPN | 8月18日18.3M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点节点机场分享">搜免费VPN | 8月18日18.3M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-4-vpn-node.htm" title="搜免费VPN | 8月4日21.3M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Trojan节点/Singbox节点/Clash节点节点机场分享">搜免费VPN | 8月4日21.3M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Trojan节点/Singbox节点/Clash节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-8-vpn-node.htm" title="搜免费VPN | 8月8日20.6M/S|免费Shadowrocket节点/Clash节点/Singbox节点/SSR节点/Trojan节点/V2ray节点节点机场分享">搜免费VPN | 8月8日20.6M/S|免费Shadowrocket节点/Clash节点/Singbox节点/SSR节点/Trojan节点/V2ray节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-10-vpn-node.htm" title="搜免费VPN | 8月10日20M/S|免费Clash节点/SSR节点/Singbox节点/Trojan节点/Shadowrocket节点/V2ray节点节点机场分享">搜免费VPN | 8月10日20M/S|免费Clash节点/SSR节点/Singbox节点/Trojan节点/Shadowrocket节点/V2ray节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-24-free-vpn-node.htm" title="搜免费VPN | 8月24日20.7M/S|免费Singbox节点/SSR节点/Shadowrocket节点/Trojan节点/V2ray节点/Clash节点节点机场分享">搜免费VPN | 8月24日20.7M/S|免费Singbox节点/SSR节点/Shadowrocket节点/Trojan节点/V2ray节点/Clash节点节点机场分享</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-8-26-vpn-node.htm" title="搜免费VPN | 8月26日21.3M/S|免费Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/Trojan节点/SSR节点节点机场分享">搜免费VPN | 8月26日21.3M/S|免费Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/Trojan节点/SSR节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/vpn-github-2026-8-3.htm" title="搜免费VPN | 8月3日18.4M/S|免费Trojan节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点/V2ray节点节点机场分享">搜免费VPN | 8月3日18.4M/S|免费Trojan节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点/V2ray节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/vpn-github-2026-8-25.htm" title="搜免费VPN | 8月25日19.5M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/Clash节点/SSR节点/Trojan节点节点机场分享">搜免费VPN | 8月25日19.5M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/Clash节点/SSR节点/Trojan节点节点机场分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-27-node-share-links.htm" title="搜免费VPN | 7月27日21.3M/S|免费Trojan节点/V2ray节点/SSR节点/Shadowrocket节点/Singbox节点/Clash节点节点机场分享">搜免费VPN | 7月27日21.3M/S|免费Trojan节点/V2ray节点/SSR节点/Shadowrocket节点/Singbox节点/Clash节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-16-free-vpn-node.htm" title="搜免费VPN | 8月16日20.5M/S|免费SSR节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/Trojan节点节点机场分享">搜免费VPN | 8月16日20.5M/S|免费SSR节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点/Trojan节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-8-7.htm" title="搜免费VPN | 8月7日20.9M/S|免费SSR节点/Singbox节点/Shadowrocket节点/Clash节点/Trojan节点/V2ray节点节点机场分享">搜免费VPN | 8月7日20.9M/S|免费SSR节点/Singbox节点/Shadowrocket节点/Clash节点/Trojan节点/V2ray节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/mianfei-vpn-2026-8-27.htm" title="搜免费VPN | 8月27日21.3M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Trojan节点/Clash节点/V2ray节点节点机场分享">搜免费VPN | 8月27日21.3M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Trojan节点/Clash节点/V2ray节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-22-vpn-free.htm" title="搜免费VPN | 8月22日18.6M/S|免费Singbox节点/Trojan节点/V2ray节点/SSR节点/Clash节点/Shadowrocket节点节点机场分享">搜免费VPN | 8月22日18.6M/S|免费Singbox节点/Trojan节点/V2ray节点/SSR节点/Clash节点/Shadowrocket节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/share-vpn-2026-9-1.htm" title="搜免费VPN | 9月1日22.6M/S|免费V2ray节点/Clash节点/Trojan节点/Singbox节点/Shadowrocket节点/SSR节点节点机场分享">搜免费VPN | 9月1日22.6M/S|免费V2ray节点/Clash节点/Trojan节点/Singbox节点/Shadowrocket节点/SSR节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-20-node-share.htm" title="搜免费VPN | 8月20日20.6M/S|免费Clash节点/V2ray节点/Trojan节点/Shadowrocket节点/Singbox节点/SSR节点节点机场分享">搜免费VPN | 8月20日20.6M/S|免费Clash节点/V2ray节点/Trojan节点/Shadowrocket节点/Singbox节点/SSR节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-vpn-2026-8-9.htm" title="搜免费VPN | 8月9日19.4M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/V2ray节点/Clash节点/SSR节点节点机场分享">搜免费VPN | 8月9日19.4M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/V2ray节点/Clash节点/SSR节点节点机场分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-30-vpn-proxy.htm" title="搜免费VPN | 8月30日21.6M/S|免费Shadowrocket节点/V2ray节点/Clash节点/SSR节点/Singbox节点/Trojan节点节点机场分享">搜免费VPN | 8月30日21.6M/S|免费Shadowrocket节点/V2ray节点/Clash节点/SSR节点/Singbox节点/Trojan节点节点机场分享</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -483,10 +483,10 @@ A：可以。使用 Clash Meta、Clash Classic 等免费内核版本，不存在
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">30</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
+                <h4><span class="badge" style="float: right;">6</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">13</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
+                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
             </li>
                     </ul>
     </div>
